@@ -2,3 +2,11 @@
   display: flex;
   gap: 16px;
 }
+
+@media (max-width: 540px) {
+  .svg {
+    width: 32px;
+    height: 32px;
+    background-color: red;
+  }
+}

@@ -10,7 +10,6 @@ const StarIcon = ({ filled, onClick }) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     onClick={onClick}
-    style={{ cursor: "pointer", width: 64, height: 64 }}
   >
     <rect width="65" height="65" fill="#1E1E1E" />
     <g clipPath="url(#clip0_0_1)">
@@ -51,7 +50,7 @@ const StarRating = ({ data }) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
-        <StarIcon key={i} filled={i <= rating} onClick={() => setRating(i)} />,
+        <StarIcon key={i} filled={i <= rating} onClick={() => setRating(i)} />
       );
     }
     return stars;

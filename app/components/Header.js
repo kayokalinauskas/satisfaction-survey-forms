@@ -11,7 +11,7 @@ const Header = () => {
         <div className={styles["profile-picture"]}>
           <span>N</span>
         </div>
-        <p>Nome do Usuário Aqui</p>
+        <p className={styles.username}>Nome do Usuário Aqui</p>
         <Image src="/arrow-down.svg" width={16} height={9} alt="Logo" />
       </div>
     </header>

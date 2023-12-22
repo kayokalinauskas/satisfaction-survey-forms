@@ -1,4 +1,5 @@
 @use "./variables.module.scss" as *;
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@
 .background {
   background-color: $primary-dark-color;
   position: absolute;
+  top: 0;
   height: 316px;
   width: 100%;
   z-index: -1;
@@ -261,4 +263,76 @@
   transition: 0.3s ease-in-out;
   background-color: #002fb3;
   color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .form-container {
+    display: flex;
+    width: 80%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    width: 90%;
+
+    h1 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+    }
+    label {
+      font-size: 1rem;
+    }
+  }
+
+  .form {
+    max-width: 100%;
+    gap: 15px;
+    padding: 22px;
+  }
+
+  .user-container {
+    gap: 8px;
+  }
+
+  .textarea-form,
+  .textarea-form-question {
+    height: 50%;
+  }
+  .checkboxes-list {
+    gap: 4px;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .title-label {
+    display: none;
+  }
+  .title {
+    font-size: 1.15rem;
+  }
+  .subtitle {
+    font-size: 1.15rem;
+  }
+
+  .select {
+    font-size: 1rem;
+    padding: 8px;
+    height: 3rem;
+  }
+
+  .checkbox-button {
+    padding: 4px 8px 4px 8px;
+    font-size: 0.8rem !important;
+  }
 }
