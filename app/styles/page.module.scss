@@ -83,7 +83,11 @@
 .star {
   cursor: pointer;
 }
-
+.question-box {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 .select {
   display: flex;
   width: 100%;

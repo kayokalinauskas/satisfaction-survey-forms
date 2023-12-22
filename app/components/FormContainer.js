@@ -24,17 +24,22 @@ const FormContainer = () => {
   };
   return (
     <form onSubmit={handleForm} className={styles["form"]}>
-      <h2>Título da pergunta deve ficar aqui</h2>
-      <p className={styles["description"]}>
-        Também é importante ter um espaço para o dono da loja colocar uma
-        descrição da pergunta para ajudar o entendimento do usuário
-      </p>
-      <StarRating data={handleRating} value={starRating} name="starRating" />
-      <h2>Título da pergunta deve ficar aqui</h2>
-      <p className={styles["description"]}>
-        Também é importante ter um espaço para o dono da loja colocar uma
-        descrição da pergunta para ajudar o entendimento do usuário
-      </p>
+      <div className={styles["question-box"]}>
+        <h2>Título da pergunta deve ficar aqui</h2>
+        <p className={styles["description"]}>
+          Também é importante ter um espaço para o dono da loja colocar uma
+          descrição da pergunta para ajudar o entendimento do usuário
+        </p>
+        <StarRating data={handleRating} value={starRating} name="starRating" />
+      </div>
+
+      <div className={styles["question-box"]}>
+        <h2>Título da pergunta deve ficar aqui</h2>
+        <p className={styles["description"]}>
+          Também é importante ter um espaço para o dono da loja colocar uma
+          descrição da pergunta para ajudar o entendimento do usuário
+        </p>
+      </div>
       <div className={styles["radio-container"]}>
         {Array.from({ length: 10 }).map((_, i) => (
           <label className={styles["radio-label"]} key={i}>
