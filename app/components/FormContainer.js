@@ -48,6 +48,7 @@ const FormContainer = () => {
           Descreva o motivo de sua avaliação <span>(opcional)</span>
         </p>
         <textarea
+          placeholder="Digite aqui..."
           className={styles["textarea-form"]}
           name="description"
         ></textarea>
@@ -134,6 +135,7 @@ const FormContainer = () => {
       <div className={styles["textarea-form-container"]}>
         <p className={styles["subtitle"]}>Pergunta de texto?</p>
         <textarea
+          placeholder="Digite a resposta"
           className={styles["textarea-form-question"]}
           name="description-2"
         ></textarea>
@@ -141,6 +143,7 @@ const FormContainer = () => {
       <div className={styles["textarea-form-container"]}>
         <p className={styles["subtitle"]}>Pergunta de texto?</p>
         <textarea
+          placeholder="Digite a resposta"
           className={styles["textarea-form-question"]}
           name="description-3"
         ></textarea>
