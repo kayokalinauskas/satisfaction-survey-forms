@@ -102,7 +102,7 @@
 .radio-container {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .radio-label {
@@ -156,10 +156,6 @@
 }
 .secondary-dark-color {
   color: $secondary-dark-color;
-}
-.bolean-radio-form {
-  display: flex;
-  gap: 366px;
 }
 
 .checkboxes {
