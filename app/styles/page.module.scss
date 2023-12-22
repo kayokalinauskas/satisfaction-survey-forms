@@ -1,0 +1,260 @@
+@use "./variables.module.scss" as *;
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  background-color: $primary-dark-color;
+  position: absolute;
+  height: 316px;
+  width: 100%;
+  z-index: -1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px 16px 32px;
+}
+
+.logo-container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-container {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: $primary-light-color;
+  align-items: center;
+  img {
+    cursor: pointer;
+  }
+}
+
+.profile-picture {
+  display: flex;
+  background-color: $secondary-dark-color;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.title-label {
+  font-size: 12px;
+  margin: 16px 0px 16px 64px;
+  color: $label-color;
+}
+
+.description {
+  color: $secondary-dark-color;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-self: center;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 31px;
+  background-color: $white;
+  border-radius: 16px;
+  margin-top: 24px;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.select {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #acb1ba;
+  color: $primary-dark-color;
+  border-radius: 8px;
+
+  option {
+    margin: 16px;
+  }
+}
+.placeholder {
+  color: $placeholder-color;
+}
+.radio-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.radio-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.bolean-radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  div {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.title {
+  color: $primary-dark-color;
+  font-size: 16px;
+}
+
+.subtitle {
+  color: $secondary-dark-color;
+  font-size: 16px;
+  span {
+    color: $placeholder-color;
+  }
+}
+.textarea-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.textarea-form {
+  display: flex;
+  height: 104px;
+  width: 100%;
+  padding: 16px;
+
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+
+  border-radius: 8px;
+  border: 1px solid $label-color;
+  background: $white;
+}
+.secondary-dark-color {
+  color: $secondary-dark-color;
+}
+.bolean-radio-form {
+  display: flex;
+  gap: 366px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  label {
+    color: $secondary-dark-color;
+  }
+}
+
+.button-checkboxes-container {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.checkbox-button {
+  display: flex;
+  border: 1px solid #ccd0d6;
+  padding: 8px 16px 8px 16px;
+  border-radius: 500px;
+  align-items: center;
+  color: $secondary-dark-color;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkboxes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input {
+  display: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label > input {
+  margin-right: 8px;
+}
+
+.checked-style {
+  border-radius: 500px;
+  border: 2px solid #002fb3;
+  margin: -1px;
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 47, 179, 0.1) 0%,
+      rgba(0, 47, 179, 0.1) 100%
+    ),
+    rgba(255, 255, 255, 0);
+}
+
+.textarea-form-question {
+  display: flex;
+  height: 168px;
+  width: 100%;
+  padding: 16px;
+  color: $secondary-dark-color;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Lightmode-Grays-Gray-4---Lightmode, #acb1ba);
+  background: var(--Pure-White, #fff);
+}
+
+.submit-button {
+  display: flex;
+  height: 56px;
+  padding: 10px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 500px;
+  background-color: $yellow;
+  box-shadow:
+    0px 0px 0px 0px rgba(255, 213, 104, 0.24),
+    0px 1px 3px 0px rgba(255, 213, 104, 0.24),
+    0px 5px 5px 0px rgba(255, 213, 104, 0.2),
+    0px 11px 7px 0px rgba(255, 213, 104, 0.12),
+    0px 20px 8px 0px rgba(255, 213, 104, 0.04),
+    0px 31px 9px 0px rgba(255, 213, 104, 0);
+
+  color: $primary-dark-color;
+  border: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  cursor: pointer;
+}
