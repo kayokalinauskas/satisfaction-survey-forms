@@ -10,6 +10,7 @@ const StarIcon = ({ filled, onClick }) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     onClick={onClick}
+    style={{ cursor: "pointer" }}
   >
     <rect width="65" height="65" fill="#1E1E1E" />
     <g clipPath="url(#clip0_0_1)">
