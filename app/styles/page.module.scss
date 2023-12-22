@@ -336,3 +336,9 @@
     font-size: 0.8rem !important;
   }
 }
+
+@media (min-width: 1600px) {
+  .radio-container {
+    justify-content: space-around;
+  }
+}
