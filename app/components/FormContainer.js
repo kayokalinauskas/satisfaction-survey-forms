@@ -51,15 +51,17 @@ const FormContainer = () => {
           placeholder="Digite aqui..."
           className={styles["textarea-form"]}
           name="description"
+          required
         ></textarea>
       </div>
       <select
-        value={selectedOption}
         onChange={(e) => setSelectedOption(e.target.value)}
         className={styles["select"]}
         name="store"
+        required
+        defaultValue=""
       >
-        <option className={styles.placeholder} disabled={true} value={0}>
+        <option className={styles.placeholder} disabled value={""}>
           Qual loja você frequenta?
         </option>
         <option value={1}>Opção 1</option>
@@ -76,6 +78,7 @@ const FormContainer = () => {
               id="sim"
               name="bolean-radio-button"
               value="true"
+              required
             />
             <label className={styles["secondary-dark-color"]} htmlFor="sim">
               Sim
@@ -138,6 +141,7 @@ const FormContainer = () => {
           placeholder="Digite a resposta"
           className={styles["textarea-form-question"]}
           name="description-2"
+          required
         ></textarea>
       </div>
       <div className={styles["textarea-form-container"]}>
@@ -146,6 +150,7 @@ const FormContainer = () => {
           placeholder="Digite a resposta"
           className={styles["textarea-form-question"]}
           name="description-3"
+          required
         ></textarea>
       </div>
       <button className={styles["submit-button"]} type="submit">
