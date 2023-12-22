@@ -257,4 +257,11 @@
   font-weight: 700;
   line-height: 100%;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #002fb3;
+  color: #fff;
 }
