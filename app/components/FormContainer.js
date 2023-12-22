@@ -39,15 +39,16 @@ const FormContainer = () => {
           Também é importante ter um espaço para o dono da loja colocar uma
           descrição da pergunta para ajudar o entendimento do usuário
         </p>
+        <div className={styles["radio-container"]}>
+          {Array.from({ length: 10 }).map((_, i) => (
+            <label className={styles["radio-label"]} key={i}>
+              <input type="radio" name="radio" value={i + 1} />
+              {i + 1}
+            </label>
+          ))}
+        </div>
       </div>
-      <div className={styles["radio-container"]}>
-        {Array.from({ length: 10 }).map((_, i) => (
-          <label className={styles["radio-label"]} key={i}>
-            <input type="radio" name="radio" value={i + 1} />
-            {i + 1}
-          </label>
-        ))}
-      </div>
+
       <div className={styles["textarea-form-container"]}>
         <p className={styles["subtitle"]}>
           Descreva o motivo de sua avaliação <span>(opcional)</span>
