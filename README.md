@@ -1,3 +1,5 @@
+This is a project from a code challenge to clone a [figma layout](https://www.figma.com/file/x1vgOTdeqvF1DkhN4ImT7b/Teste-React?type=design&node-id=0-1&mode=design&t=DX53MtJDkrGxEQ85-0).
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). <br>
 
 ![Live Demo](https://i.imgur.com/O6VAywH.png)
