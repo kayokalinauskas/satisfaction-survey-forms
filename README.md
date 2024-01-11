@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ![Live Demo](https://i.imgur.com/O6VAywH.png)
 
-[LIVE DEMO](https://teste-fidelimax.vercel.app/)
+[LIVE DEMO](https://satisfaction-survey-forms.vercel.app/)
 
 ## Getting Started
 
